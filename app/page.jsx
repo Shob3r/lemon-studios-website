@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Josefin_Sans } from "next/font/google";
+
+const josefinSans = Josefin_Sans({
+  variable: "--font-josefin-sans",
+  subsets: ["latin"]
+});
 
 export default function Home() {
   return (
@@ -11,7 +17,12 @@ export default function Home() {
           width={256}
           height={256}
           priority />
-        <p className="text-center text-2xl">Reconstruction (is probably) in progress...</p>
+        <h1 className={`${josefinSans.className} text-5xl`}>Lemon Studios</h1>
+        <p className="mb-50 text-xl">We make software and video games (sometimes)</p>
+        <h1 className="text-3xl">Our Works:</h1>
+        <div>
+          
+        </div>
       </main>
     </div>
   );
