@@ -26,10 +26,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${rubik.variable} ${geistMono.variable} antialiased`}>
-        <nav className="fixed bg-black border-b-1 border-white flex flex-auto w-screen h-12 text-center items-center p-5 z-50 shadow-2xl">
-          <Link href="" className="mr-5">Projects</Link>
-          <Link href="" className="mr-5">About</Link>
-          <Link href="" className="mr-5">Articles</Link>
+        <nav className="fixed bg-black border-b-1  border-white flex flex-auto w-screen h-15 text-center items-center p-5 z-50 shadow-2xl">
+          <button className="navbar-button">Projects</button>
+          <button className="navbar-button">About</button>
+          <button className="navbar-button">Articles</button>
         </nav>
         {children}
       </body>
